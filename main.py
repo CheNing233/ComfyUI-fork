@@ -67,14 +67,17 @@ import logging
 '''
 FIX import utils.extra_config NOT FOUND ERR
 '''
-import sys
-utils_path = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)),
-    "utils"
-)
+try:
+    import utils.extra_config
+except ImportError:
+    import sys
+    utils_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        "utils"
+    )
 
-sys.path.append(utils_path)
-import extra_config
+    sys.path.append(utils_path)
+    import extra_config
 '''
 FIX import utils.extra_config NOT FOUND ERR END.
 '''
