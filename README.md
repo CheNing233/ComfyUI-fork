@@ -1,5 +1,12 @@
 <div align="center">
 
+# About this fork
+
+This fork only for [sd-webui-comfyui](https://github.com/ModelSurge/sd-webui-comfyui)
+
+1. FIX import utils.extra_config NOT FOUND ERR
+2. If you use Windows, you maybe need to install [triton3.0.0](https://huggingface.co/madbuda/triton-windows-builds)
+
 # ComfyUI
 **The most powerful and modular diffusion model GUI and backend.**
 
